@@ -103,19 +103,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sn-MA-7mN">
-                                                    <rect key="frame" x="8" y="8" width="398" height="383"/>
+                                                    <rect key="frame" x="28" y="19" width="358" height="344.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="5sn-MA-7mN" secondAttribute="height" multiplier="398:383" id="CWC-c0-Vtd"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hayden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3D-dl-KhO">
-                                                    <rect key="frame" x="8" y="399" width="58.5" height="21"/>
+                                                    <rect key="frame" x="8" y="371.5" width="58.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Pretty leafs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOY-jr-Uj6">
-                                                    <rect key="frame" x="74.5" y="399" width="331.5" height="20.5"/>
+                                                    <rect key="frame" x="74.5" y="371.5" width="331.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -125,10 +125,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="VOY-jr-Uj6" secondAttribute="trailing" constant="8" id="0GV-yb-JdT"/>
                                                 <constraint firstItem="VOY-jr-Uj6" firstAttribute="leading" secondItem="v3D-dl-KhO" secondAttribute="trailing" constant="8" id="15w-vo-c6y"/>
                                                 <constraint firstItem="v3D-dl-KhO" firstAttribute="topMargin" secondItem="5sn-MA-7mN" secondAttribute="bottom" constant="16" id="FP4-0h-fgm"/>
-                                                <constraint firstAttribute="trailing" secondItem="5sn-MA-7mN" secondAttribute="trailing" constant="8" id="MZ4-J1-zuA"/>
-                                                <constraint firstItem="5sn-MA-7mN" firstAttribute="top" secondItem="GNQ-h6-gQb" secondAttribute="top" constant="8" id="QW5-mw-HUA"/>
+                                                <constraint firstItem="5sn-MA-7mN" firstAttribute="leading" secondItem="GNQ-h6-gQb" secondAttribute="leadingMargin" constant="8" id="Hrm-Kx-3Cp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5sn-MA-7mN" secondAttribute="trailing" constant="8" id="SHW-At-uGv"/>
+                                                <constraint firstItem="5sn-MA-7mN" firstAttribute="top" secondItem="GNQ-h6-gQb" secondAttribute="topMargin" constant="8" id="Ti6-ky-xJf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5sn-MA-7mN" secondAttribute="trailing" constant="8" id="Urj-oq-Qtc"/>
                                                 <constraint firstItem="VOY-jr-Uj6" firstAttribute="top" secondItem="5sn-MA-7mN" secondAttribute="bottom" constant="8" id="frx-Sh-feb"/>
-                                                <constraint firstItem="5sn-MA-7mN" firstAttribute="leading" secondItem="GNQ-h6-gQb" secondAttribute="leading" constant="8" id="hhW-7q-NxZ"/>
                                                 <constraint firstItem="v3D-dl-KhO" firstAttribute="leading" secondItem="GNQ-h6-gQb" secondAttribute="leading" constant="8" id="i6F-ml-f64"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VOY-jr-Uj6" secondAttribute="bottom" constant="8" id="xcw-0F-QBS"/>
                                             </constraints>
@@ -168,9 +169,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="m7n-Io-SBq">
-                                <rect key="frame" x="10" y="44" width="394" height="394"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="m7n-Io-SBq">
+                                <rect key="frame" x="8" y="52" width="398" height="375"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="syI-K6-Hvl" appends="YES" id="3QM-G3-wl9"/>
@@ -193,6 +193,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2l5-e6-ruf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2l5-e6-ruf" firstAttribute="trailing" secondItem="m7n-Io-SBq" secondAttribute="trailing" constant="8" id="584-OY-8Ll"/>
+                            <constraint firstItem="m7n-Io-SBq" firstAttribute="top" secondItem="2l5-e6-ruf" secondAttribute="top" constant="8" id="Gfj-Pm-MfS"/>
+                            <constraint firstItem="m7n-Io-SBq" firstAttribute="leading" secondItem="2l5-e6-ruf" secondAttribute="leading" constant="8" id="nfH-YZ-CmI"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="commentField" destination="hJR-WQ-ZPK" id="nKv-2v-NF7"/>
